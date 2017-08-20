@@ -1,0 +1,13 @@
+
+<h2>Contact</h2>
+<!-- elvis -->
+<span>{{address?.street}}</span>
+
+<!-- template reference variable # -->
+<p #para1></p>
+<input #name />
+<button (click)="para1.textContent='Hello';name.value='member';name.focus();">
+ set text
+</button>
+
+<like like-title="Contact" [(count)]="contactLikes" ></like>

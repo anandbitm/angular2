@@ -1,0 +1,9 @@
+<h2>About</h2>
+<button (click)="toggle($event)">Toggle</button>
+<div *ngIf="show">
+  <h4>Members</h4>
+  <ul>
+    <li *ngFor="let name of members">{{name}}</li><!-- *ngFor is structural directive -->
+  </ul>
+  <span>3 power 2: 3*3 = {{3 | power:2}}</span>
+</div>
