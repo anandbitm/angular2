@@ -1,0 +1,22 @@
+<h2>Product Search</h2>
+
+<form [formGroup]="form" >
+  
+      <label>Search </label>
+      <input type="text" 
+              formControlName="searchTextControl"
+                />
+ 
+</form>
+              
+<table>
+  <tr>
+      <th>Product</th>
+      
+  </tr>
+  <tr *ngFor="let p of  products">
+      <td>
+          {{p.name}}
+      </td>
+  </tr>
+</table>

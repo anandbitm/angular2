@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {Subject} from "rxjs/subject";
+import {Subject} from "rxjs/Subject";
 
 // it should be outside of class
 export interface Message{
